@@ -12,7 +12,7 @@ calculation=$(( $used * 100 / total ))
 if [ "$Disk_usage" -gt "$threshold" ]
 then
     echo "High usage"
-    echo "$(date) High Storage >> Storage.log"
+    echo "$(date) High Storage" >> Storage.log
 else
     echo "Normal usage"
 fi
